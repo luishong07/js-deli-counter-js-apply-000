@@ -1,20 +1,33 @@
- //how to access index and person?
+function takeANumber (line,name){   //
+    line.push(name)
+    return `Welcome, ${name}. You are number ${line.length} in line.` // return welcome message
+    
+  };
  
- var people = ["Ada",  // only registering the first one 
-              "Grace", 
-              "Kent"
- ]
-// var katzDeliLine =["1","2","3"
-//     ];
-function takeANumber(katzDeliLine, people){
-  return 'Welcome, '+ people +'. You are number '+ katzDeliLine + ' in line.'
-
-}
-
-function nowServing(katzDeliLine){ //needs conditional statement?
   
-}
+  function currentLine(line){
+  if (!line.length){   //use !line.length to negate value of line. why not line.length=0 or false?
+    return "The line is currently empty."
+  }
 
-function currentLine(){
   
-}
+  var numbersnames =[]
+  
+  for ( let i = 0,  l=line.length ; i < l; i++){
+    numbersnames.push(`${i+1}. ${line[i]}`) // this puts together number and name. example 1.Bill. and loop creates the sequence
+  
+    
+  }
+  return `The line is currently: ${numbersnames.join(', ')}`   //returns the sequence 
+  };
+  
+  
+  function nowServing(line){
+    if(!line.length ){
+      return "There is nobody waiting to be served!"
+      
+    }
+    return `Currently serving ${line.shift()}.` // arrays section
+  };
+  
+   
