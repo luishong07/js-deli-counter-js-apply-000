@@ -28,4 +28,12 @@ function takeANumber (line,name){   //
     return `Currently serving ${line.shift()}.` // arrays section
   };
   
+  
+  function giveAnumber(line){
+   let  i=0, 
+   i++
+   
+   line.push(i)
+   
+  }
    
