@@ -11,12 +11,10 @@ function takeANumber (line,name){   //
   }
 
   
-  var numbersnames =[]
+  var numbersnames =[] //contains the line
   
   for ( let i = 0,  l=line.length ; i < l; i++){
     numbersnames.push(`${i+1}. ${line[i]}`) // this puts together number and name. example 1.Bill. and loop creates the sequence
-  
-    
   }
   return `The line is currently: ${numbersnames.join(', ')}`   //returns the sequence 
   };
