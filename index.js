@@ -6,7 +6,7 @@ function takeANumber (line,name){   //
  
   
   function currentLine(line){
-  if (!line.length){   //use !line.length to negate value of line. why not line.length=0 or false?
+  if (line.length=){   //use !line.length to negate value of line. why not line.length=0 or false?
     return "The line is currently empty."
   }
 
